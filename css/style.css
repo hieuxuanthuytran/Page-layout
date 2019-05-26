@@ -18,13 +18,11 @@ p {
 }
 
 h2,
-h3,
 a {
 	color: #093a58;
 }
 
-h2,
-h3 {
+h2 {
 	margin-top: 0;
 }
 
@@ -73,6 +71,7 @@ img {
 }
 
 /* ---- Layout Containers ---- */
+
 .container {
 	padding-left: 1em;
 	padding-right: 1em;
@@ -115,14 +114,14 @@ img {
 		min-height: calc(100vh - 89px);
 	}
 
-	.name {
+	.name,
+	.main-nav li {
 		float: left;
 	}
 	.main-nav {
 		float: right;
 	}
 	.main-nav li {
-		float: left;
 		margin-top: 12px;
 		margin-left: 12px;
 	}
