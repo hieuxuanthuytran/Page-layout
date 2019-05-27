@@ -34,6 +34,24 @@ img {
 	max-width: 100%;
 }
 
+figure {
+	position: relative;
+	margin: 0;
+	line-height: 0;
+}
+
+figcaption {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+
+	padding: .5em;
+	font-size: .9em;
+	line-height: 1.5;
+	color: #fff;
+	background-color: rgba(19,43,102, .85);
+}
+
 /* ================================= 
   Base Layout Styles
 ==================================== */
@@ -90,6 +108,10 @@ img {
 	text-align: center;
 }
 
+.content {
+	padding: 1em;
+}
+
 /* ---- Page Elements ---- */
 
 .logo {
@@ -99,12 +121,34 @@ img {
 .headline {
 	margin-bottom: 0;
 }
+
+.icon-location {
+	position: absolute;
+	width: 35px;
+	top: -15px;
+	right: -15px;
+}
+
 /* ================================= 
   Media Queries
 ==================================== */
 
 @media (min-width: 769px) {
 	/* ---- Navigation ---- */
+
+	body {
+		padding-top: 64px;
+	}
+
+	.main-header {
+		position: fixed;
+		background-color: #fff;
+		box-shadow: 0 1px 4px rgb(0,0,0, .4);
+		width: 100%;
+		top: 0;
+		z-index: 1;
+	}
+
 	.container {
 		width: 90%;
 		margin: 0 auto;
